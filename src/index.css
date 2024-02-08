@@ -1,0 +1,4 @@
+/* CSS Reset remove the few px margin on entire body */
+* {
+    margin: 0;
+}

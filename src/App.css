@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Public Sans', sans-serif;
+}
+
+:root {
+    --clr-Dark-Blue: hsl(233, 26%, 24%);
+    --clr-Lime-Green: hsl(136, 65%, 51%);
+    --clr-Bright-Cyan: hsl(192, 70%, 51%);
+    --clr-Grayish-Blue: hsl(233, 8%, 62%);
+    --clr-Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --clr-Very-Light-Gray: hsl(0, 0%, 98%);
+    --clr-White: hsl(0, 0%, 100%);
+}
+
+.centered-div {
+    margin-inline: auto;
+    max-width: 1500px;
+    padding-inline: 30px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.background-section {
+    height: 630px;
+    background: url('../images/bg-intro-mobile.svg');
+    background-position: right;
+}
+
+.background-contents {
+    height: 630px;
+}
+
+@media (min-width: 50em) {
+    .background-section {
+        background: url('../images/bg-intro-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: right -400px top -250px;
+    }
+}
+
+h1, h2, h3 {
+    color: var(--clr-Dark-Blue);
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+p {
+    color: var(--clr-Grayish-Blue);
+    font-size: 1.2rem;
+}
+
+.title-paragraph {
+    width: 50ch;
+}
+
+.title-paragraph > * {
+    margin-bottom: 1.6rem;
+}
+
+.mockup-div {
+    position: relative;
+    right: -100px;
+    z-index: 1;
+}
+
+.section-spacer {
+    margin-bottom: 5rem;
+}
+
+.gap {
+    gap: 30px;
+}

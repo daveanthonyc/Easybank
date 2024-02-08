@@ -1,0 +1,20 @@
+.custom-button {
+    font-weight: 700;
+    font-size: 1rem;
+
+    color: var(--clr-White);
+    background: linear-gradient(to right, var(--clr-Lime-Green), var(--clr-Bright-Cyan));
+
+    outline: none;
+    border: none;
+
+    border-radius: 100vmax;
+    padding-block: 0.8rem;
+    padding-inline: 2rem;
+    transition: filter 200ms ease-in-out;
+}
+
+.custom-button:hover {
+    cursor: pointer;
+    filter: brightness(1.15);
+}

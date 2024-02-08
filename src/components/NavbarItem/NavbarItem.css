@@ -1,0 +1,30 @@
+.navbar-item {
+    position: relative;
+    padding-block: 30px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: var(--clr-Dark-Blue);
+    opacity: 50%;
+    transition: opacity 200ms ease-in-out;
+}
+
+.navbar-item::after {
+    content: "";
+    width: 0%;
+    height: 5px;
+    background: linear-gradient(to right, var(--clr-Lime-Green), var(--clr-Bright-Cyan));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 200ms ease-in-out;
+}
+
+.navbar-item:hover::after {
+    width: 100%;
+}
+
+.navbar-link:hover {
+    opacity: 100%;
+}

@@ -1,0 +1,13 @@
+.main-header {
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    z-index: 999;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    list-style: none;
+}
