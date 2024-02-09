@@ -8,6 +8,7 @@
     color: var(--clr-Dark-Blue);
     opacity: 50%;
     transition: opacity 200ms ease-in-out;
+    padding-block: 30px;
 }
 
 .navbar-item::after {

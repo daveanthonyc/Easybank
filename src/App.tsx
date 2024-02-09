@@ -1,16 +1,26 @@
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import NavbarItem from './components/NavbarItem/NavbarItem'
-import mobileBg from '../images/bg-intro-mobile.svg'
-import desktopBg from '../images/bg-intro-desktop.svg'
 import mockups from '../images/image-mockups.png'
 import Button from './components/Button/Button'
 import Card from './components/Card/Card'
 
+import logo from '../images/logo.svg'
 import online from '../images/icon-online.svg'
 import budgeting from '../images/icon-budgeting.svg'
 import onboarding from '../images/icon-onboarding.svg'
 import api from '../images/icon-api.svg'
+import CardImage from './components/CardImage/CardImage'
+import moneyImg from '../images/image-currency.jpg'
+import foodImg from '../images/image-restaurant.jpg'
+import planeImg from '../images/image-plane.jpg'
+import confettiImg from '../images/image-confetti.jpg'
+import fbLogo from '../images/icon-facebook.svg'
+import ytLogo from '../images/icon-youtube.svg'
+import twitterLogo from '../images/icon-twitter.svg'
+import pinterestLogo from '../images/icon-pinterest.svg'
+import instaLogo from '../images/icon-instagram.svg'
+import { NavLink } from 'react-router-dom'
 
 function App() {
 
@@ -25,6 +35,7 @@ function App() {
         </Navbar>
 
         <main>
+
             <section className='background-section section-spacer'>
                 <div className='centered-div flex-between custom-height background-contents'>
                     <div className='title-paragraph'>
@@ -56,11 +67,48 @@ function App() {
 
             <section className='section-spacer centered-div'>
                 <h2>Latest Articles</h2>
+                <div className='flex-between gap'>
+                    <CardImage title='Receive money in in any currency with no fees' author='Claire Robinson' imgsrc={moneyImg} alt='Money'>The world is becoming smaller and the we're becoming more mobile. So why should you be forced to receive money from only a single...</CardImage>
+                    <CardImage title='Treat yourself without worrying about money' author='Wilson Hutton' imgsrc={foodImg} alt='Food'>Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you...</CardImage>
+                    <CardImage title='Take your Easybank card wherever you go' author='Wilson Hutton' imgsrc={planeImg} alt='Plane'>We want you to enjoy your travels. This is why we don't charge any fees on purchases while you're abroad. We'll even show you...</CardImage>
+                    <CardImage title='Our invite-only Beta accounts are now live!' author='Claire Robinson' imgsrc={confettiImg} alt='Confetti'>After a lot of hard work by the whole team, we're excited to launch our closed beta. It's easy to request an invite through the site...</CardImage>
+                </div>
             </section>
+
         </main>
 
-        <footer>
+        <footer className='main-footer'>
+            <div className='section-spacer centered-div flex-between'>
+                <div>
+                    <div className='vert-grid-gap'>
+                        <a href="" className="logo-link color-reverse">
+                            <img src={logo} alt="logo" className="" />
+                        </a>
+                        <div className='flex-between gap-sm'>
+                            <a href=""><img src={fbLogo} alt="" /></a>
+                            <a href=""><img src={ytLogo} alt="" /></a>
+                            <a href=""><img src={twitterLogo} alt="" /></a>
+                            <a href=""><img src={pinterestLogo} alt="" /></a>
+                            <a href=""><img src={instaLogo} alt="" /></a>
+                        </div>
+                    </div>
+                </div>
 
+                <nav>
+                    <ul className='nav-ul'>
+                        <NavLink to={""}>About us</NavLink>
+                        <NavLink to={""}>Contact</NavLink>
+                        <NavLink to={""}>Careers</NavLink>
+                        <NavLink to={""}>Support</NavLink>
+                        <NavLink to={""}>Privacy Policy</NavLink>
+                    </ul>
+                </nav>
+
+                <div className='vert-grid-gap'>
+                    <Button>Request Invite</Button>
+                    <span>&#169; Easybank. All Rigts Reserved</span>
+                </div>
+            </div>
         </footer>
     </>
   )

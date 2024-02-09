@@ -1,0 +1,36 @@
+.card-image {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-image:hover .card-image-img {
+    width: 130%;
+}
+
+.card-image:hover {
+    cursor: pointer;
+}
+
+.card-image-img {
+    height: 230px;
+    width: 100%;
+    transition: all ease-in-out 250ms;
+}
+
+.card-image-body {
+    padding: 2rem;
+    background-color: white;
+}
+
+.card-image-container {
+
+}
+
+.card-image-body > * {
+    margin-bottom: 2rem;
+}
+
+.card-image-body span {
+    font-size: 0.8rem;
+    color: var(--clr-Grayish-Blue);
+}
